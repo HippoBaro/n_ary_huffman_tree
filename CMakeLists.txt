@@ -8,6 +8,6 @@ set(SOURCE_FILES
         )
 add_executable(n_ary_tree_huffman ${SOURCE_FILES})
 
-set(OPTS -Werror -Wall -Wextra)
+set(OPTS -O3 -Werror -Wall -Wextra)
 
 target_compile_options(n_ary_tree_huffman PUBLIC ${OPTS})
