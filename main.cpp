@@ -114,14 +114,13 @@ namespace hippobaro {
 };
 
 int main() {
-    hippobaro::print_codewords(hippobaro::create_huffman_tree<12, char, unsigned int>(
-            {
-                    {'a', 5},
-                    {'b', 9},
-                    {'c', 12},
-                    {'d', 13},
-                    {'e', 16},
-                    {'f', 45}}
+    hippobaro::print_codewords(hippobaro::create_huffman_tree<3, char, unsigned int>({
+        {'a', 5},
+        {'b', 9},
+        {'c', 12},
+        {'d', 13},
+        {'e', 16},
+        {'f', 45}}
     ));
     return 0;
 }
